@@ -8,8 +8,7 @@ const Login = () => {
     <div className="login-page">
       <header>
       <Navbar.Brand href="#" className="starhost-logo-container">
-            <img src={require('./img/starhost-logo.PNG')} alt="Star Host" />
-            <span className="starhost-logo-text">Star Host</span>
+          <img src='assets/media/logo.png' alt="Star Host" />
       </Navbar.Brand>
       </header>
       

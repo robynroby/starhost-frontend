@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Form, FormControl, Button, Container, Row, Col, Dropdown } from 'react-bootstrap';
-import './style.css';
+import { Button, Col, Container, Form, FormControl, Nav, Navbar, Row } from 'react-bootstrap';
 import Footer from './Footer';
+import './style.css';
 
 const Main = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -27,14 +27,14 @@ const Main = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link href="#us" className="starhost-landingpage-nav-link">
-                Country / Currency
-              </Nav.Link>
-              <Nav.Link href="#list" className="starhost-landingpage-nav-link">
-                List your property
-              </Nav.Link>
-              <Dropdown show={showDropdown} onToggle={(isOpen) => setShowDropdown(isOpen)}>
+            <Nav className="ml-auto btn-container-land">
+              <Button className="starhost-landingpage-nav-btn">
+                LogIn
+              </Button>
+              <Button className="starhost-landingpage-nav-btn">
+                Sign Up
+              </Button>
+              {/* <Dropdown show={showDropdown} onToggle={(isOpen) => setShowDropdown(isOpen)}>
                 <Dropdown.Toggle variant="light" id="dropdown-basic" className="starhost-more-dropdown">
                   Account
                 </Dropdown.Toggle>
@@ -47,7 +47,7 @@ const Main = () => {
                   <Dropdown.Item href="#/login">Login for hosts</Dropdown.Item>
                   <Dropdown.Item href="/sign-up">Get Started Now</Dropdown.Item>
                   </Dropdown.Menu>
-              </Dropdown>
+              </Dropdown> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -474,9 +474,25 @@ footer ul li a {
   height: 50px;
 }
 
-.starhost-landingpage-nav-link {
-  color: white !important;
-  margin-left: 1rem;
+.starhost-landingpage-nav-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  margin: 9px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s,1s all ease;
+}
+
+.starhost-landingpage-nav-btn:hover {
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  scale: 1.1;
+}
+
+.btn-container-land{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .starhost-landingpage-dropdown-menu {

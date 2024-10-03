@@ -2,9 +2,20 @@ import React, { useState } from 'react';
 import { Button, Col, Container, Form, FormControl, Nav, Navbar, Row } from 'react-bootstrap';
 import Footer from './Footer';
 import './style.css';
+import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleLogin =()=> {
+    navigate("login")
+  }
+
+  const handlesignup = () => {
+    navigate("sign-up")
+  }
 
   const categories = [
     { icon: '🏊', name: 'Private pool', location: 'Spain' },
@@ -28,10 +39,10 @@ const Main = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto btn-container-land">
-              <Button className="starhost-landingpage-nav-btn">
+              <Button className="starhost-landingpage-nav-btn" onClick={handleLogin}>
                 LogIn
               </Button>
-              <Button className="starhost-landingpage-nav-btn">
+              <Button className="starhost-landingpage-nav-btn" onClick={handlesignup}>
                 Sign Up
               </Button>
               {/* <Dropdown show={showDropdown} onToggle={(isOpen) => setShowDropdown(isOpen)}>

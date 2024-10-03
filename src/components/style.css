@@ -194,111 +194,110 @@
 
 /* LoginPage.css */
 .login-page {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    padding: 20px;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .logo img {
-    height: 30px;
-  }
-  
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  
+header {
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.login-form p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password,
+.sign-up-link {
+  color: #9d2852;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #9d2852;
+  border-color: #9d2852;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #666;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.language-select {
+  display: inline-flex;
+  align-items: center;
+}
+
+.globe-icon {
+  margin-right: 5px;
+}
+
+.copyright {
+  color: #666;
+}
+
+.feedback-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
   .login-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
   }
-  
-  .login-form h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  .login-form p {
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .password-input {
-    position: relative;
-  }
-  
-  .password-toggle {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .forgot-password, .sign-up-link {
-    color: #9d2852;
-    text-decoration: none;
-  }
-  
-  .btn-primary {
-    background-color: #9d2852;
-    border-color: #9d2852;
-  }
-  
+
   footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    font-size: 14px;
+    text-align: center;
   }
-  
-  .footer-link {
-    color: #666;
-    text-decoration: none;
-    margin-right: 15px;
-  }
-  
+
   .language-select {
-    display: inline-flex;
-    align-items: center;
+    margin-top: 15px;
   }
-  
-  .globe-icon {
-    margin-right: 5px;
-  }
-  
-  .copyright {
-    color: #666;
-  }
-  
-  .feedback-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-    .login-form {
-      padding: 20px;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  
-    .language-select {
-      margin-top: 15px;
-    }
-  }
+}
 
 
 /* sign-up-page */
@@ -320,7 +319,8 @@ nav {
   align-items: center;
 }
 
-.nav-select, .nav-link {
+.nav-select,
+.nav-link {
   margin-right: 15px;
   padding: 5px 10px;
   border: none;
@@ -445,14 +445,15 @@ footer ul li a {
     align-items: flex-start;
   }
 
-  .social-icons, .legal-links {
+  .social-icons,
+  .legal-links {
     margin-top: 10px;
   }
 }
 
 
- 
-  /* Main */
+
+/* Main */
 
 .starhost-landingpage-landing-page {
   font-family: Arial, sans-serif;
@@ -573,9 +574,10 @@ footer ul li a {
 
 
 
- /* style.css */
+/* style.css */
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -643,7 +645,7 @@ body, html {
     margin-top: 20px;
     justify-content: flex-start;
   }
-  
+
   .starhost-booking-tabs {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -727,7 +729,7 @@ body, html {
     flex-wrap: wrap;
   }
 
-  .starhost-calendar-nav > * {
+  .starhost-calendar-nav>* {
     margin-bottom: 10px;
     flex: 1 1 auto;
   }
@@ -845,7 +847,7 @@ body, html {
     align-items: flex-start;
   }
 
-  .starhost-properties-footer > div {
+  .starhost-properties-footer>div {
     margin-bottom: 1rem;
   }
 }
@@ -1161,8 +1163,8 @@ body, html {
   .calendar-controls {
     flex-wrap: wrap;
   }
-  
-  .calendar-controls > * {
+
+  .calendar-controls>* {
     margin-bottom: 0.5rem;
   }
 }

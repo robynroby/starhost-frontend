@@ -1,21 +1,34 @@
 import React, { useState } from 'react';
 import { Button, Col, Container, Form, FormControl, Nav, Navbar, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import data from "../data";
+import Card from '../maincp/Card';
 import Footer from './Footer';
 import './style.css';
-import { useNavigate } from 'react-router-dom';
 
 const Main = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const navigate = useNavigate();
 
-  const handleLogin =()=> {
+  const handleLogin = () => {
     navigate("login")
   }
 
   const handlesignup = () => {
     navigate("sign-up")
   }
+
+  const cards = data.map(item => {
+    return (
+      <Card
+        key={item.id} //map kullandigimiz her seferde key kullanmaliyiz
+        /* bu sekilde yazmak yerine spread syntax ile yazabilriz,  butun itemleri kaldirmamiz gerekir
+        item={item} */
+        {...item}
+      />
+    )
+  })
 
   const categories = [
     { icon: '🏊', name: 'Private pool', location: 'Spain' },
@@ -91,7 +104,7 @@ const Main = () => {
         </Container>
       </div>
 
-      <Container className="starhost-landingpage-categories-section">
+      {/* <Container className="starhost-landingpage-categories-section">
         <Row>
           {categories.map((category, index) => (
             <Col key={index} xs={4} sm={3} md={2} lg={1} className="mb-3">
@@ -103,7 +116,15 @@ const Main = () => {
             </Col>
           ))}
         </Row>
-      </Container>
+      </Container> */}
+
+      <div>
+        <section className="card-list">
+          {cards}
+          {cards}
+          {cards}
+        </section>
+      </div>
 
       <div className="starhost-landingpage-review-section">
         <p>

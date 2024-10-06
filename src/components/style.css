@@ -1192,3 +1192,36 @@ html {
   justify-content: center;
   padding: 20px;
 }
+
+.getstarted-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #9d2852, #ff4081);
+  /* Gradient background */
+  color: white;
+  font-weight: bold;
+  font-size: .7rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.getstarted-btn:hover {
+  background: linear-gradient(135deg, #ff4081, #9d2852);
+  /* Invert gradient on hover */
+  transform: translateY(-5px);
+  /* Lift the button */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  /* Enhance shadow on hover */
+}
+
+.getstarted-btn:active {
+  transform: translateY(-2px);
+  /* Slight reduction on click */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

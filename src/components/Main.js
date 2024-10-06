@@ -19,6 +19,10 @@ const Main = () => {
     navigate("sign-up")
   }
 
+  const gotoapp = () => {
+    navigate('home')
+  }
+
   const cards = data.map(item => {
     return (
       <Card
@@ -130,6 +134,9 @@ const Main = () => {
         <p>
           Excellent <span className="starhost-landingpage-stars">★★★★★</span> 6,275 reviews on Trustpilot
         </p>
+        <div className="getstarted-btn" onClick={gotoapp}>
+          Get Started
+        </div>
       </div>
       <Footer />
       <Button variant="dark" className="starhost-feedback-button">Feedback</Button>

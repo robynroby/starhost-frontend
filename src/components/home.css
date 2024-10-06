@@ -1,0 +1,266 @@
+:root {
+  --primary-color: #9d2852;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --text-light: #666;
+}
+
+.starhost-homepage {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.starhost-main-content {
+  padding: 40px 0;
+}
+
+.starhost-greeting-text {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.starhost-subheading-text {
+  color: var(--text-light);
+  margin-bottom: 30px;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.starhost-info-card-home {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100% !important;
+}
+
+.starhost-info-card-home:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.starhost-info-card-home .card-title {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.starhost-info-value {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.starhost-activity-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.starhost-activity-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.starhost-activity-list li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.starhost-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.starhost-logo-container {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.starhost-logo-container img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.starhost-navlink {
+  color: var(--text-color);
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.starhost-navlink:hover,
+.starhost-navlink.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.starhost-footer-section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .starhost-main-content {
+    padding: 20px 0;
+  }
+
+  .starhost-info-card-home {
+    margin-bottom: 20px;
+  }
+
+  .starhost-footer-content-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .starhost-language-selector-control {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .starhost-greeting-text {
+    text-align: center;
+  }
+
+  .starhost-subheading-text {
+    text-align: center;
+  }
+}
+
+.starhost-placeholder-items-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.starhost-placeholder-item-box {
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+.starhost-property-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.starhost-add-property-button {
+  background-color: #9d2852;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.starhost-footer-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.starhost-footer-content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.starhost-footer-links-list a,
+.starhost-copyright-info a {
+  color: #666;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.starhost-language-selector-control {
+  color: #666;
+  cursor: pointer;
+}
+
+.starhost-copyright-info {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.starhost-feedback-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 20px;
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.starhost-dropdown-menu {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.starhost-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+
+.starhost-user-initials {
+  background-color: #9d2852;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.starhost-user-name {
+  font-weight: bold;
+}
+
+.starhost-user-email {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.starhost-add-property-item {
+  color: #9d2852;
+  font-weight: bold;
+}
+
+.starhost-logout-item {
+  color: #dc3545;
+}
+
+@media (max-width: 768px) {
+  .starhost-footer-content-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .starhost-language-selector-control {
+    margin-top: 10px;
+  }
+}
